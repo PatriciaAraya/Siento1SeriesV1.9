@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siento1Series | Nosotros</title>
+    <link rel="icon" href="{%static 'core/img/titulo-1.jpg'%}">
+    <link href="{%static 'core/css/nosotros.css'%}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- incorporamos las jquery y validadores -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js">
+    </script>
+
+<style>
+    h1{
+        color: white;
+        font-weight: 1000;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-stroke: 3px black;
+    }
+</style>
+<style>
+    .span-uno{
+        color: white;
+        font-weight: 1000;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 25%;
+        -webkit-text-stroke: 1px black;
+    }
+</style>
+
+<style>
+.navbar{
+  background-color: black;
+}
+</style>
+
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-dark absolute-top">
+            <a href="{% url 'home'%}"><img src="{% static 'core/img/titulo-1.jpg' %}"  alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contactanos'%}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'nosotros' %}" tabindex="-1" aria-disabled="true">Nosotros</a>
+                    </li>
+                </ul>
+                <ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'iniciar_sesion'%}" tabindex="-1" aria-disabled="true">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'registro'%}" tabindex="-1" aria-disabled="true">Registrarse</a>
+                        </li>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container text-center mt-5 mb-2">
+        <form action="">
+            <h1 class="mb-0">CONOCE AL EQUIPO DETRAS DE SIENTO1SERIES</h1>
+        <span class="span-uno">
+          <p class="content">Siento1Series presta servicio a miembros de muchos países.</p>
+          <p class="content">La entidad de Siento1Series que te proporciona acceso al servicio de Siento1Series </p>
+          <p class="content">y que califica como tu controlador de datos y comentarios.</p>
+        </span>
+        </form>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="{%static 'core/img/nosotros/mi perfil.jpg'%}" width="90">
+                    <h5 class="mt-3 name" >David Escobar</h5><span class="work d-block">Estudiante y diseñador web</span><span class="work d-block">Santiago Chile</span>
+                    <div class="mt-4 about"><span>Estudiante de DUOC UC PAO&nbsp; Fundador de Siento1Series.</span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">dav.escobarr@duocuc.cl</h6>
+                    </div>           
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="{%static 'core/img/nosotros/felipe.jpeg'%}" width="90">
+                    <h5 class="mt-3 name">Felipe Alvarado</h5><span class="work d-block">Estudiante y diseñador web</span><span class="work d-block">Santiago Chile</span>
+                    <div class="mt-4 about"><span>Estudiante de DUOC UC PAO&nbsp; Fundador de Siento1Series.</span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">fel.alvaradoa@duocuc.cl</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="{%static 'core/img/nosotros/Patriciaa.jpeg'%}" width="90">
+                    <h5 class="mt-3 name">Patricia Araya</h5><span class="work d-block">Estudiante y diseñador web</span><span class="work d-block">Santiago Chile</span>
+                    <div class="mt-4 about"><span>Estudiante de DUOC UC PAO&nbsp; Fundadora de Siento1Series.</span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">pat.valdivieso@duocuc.cl</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="{%static 'core/img/nosotros/Franciscorod.jpeg'%}" width="90">
+                    <h5 class="mt-3 name">Francisco Rodriguez</h5><span class="work d-block">Estudiante y diseñador web</span><span class="work d-block">Santiago Chile</span>
+                    <div class="mt-4 about"><span>Estudiante de DUOC UC PAO&nbsp; Fundador de Siento1Series.</span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">fn.rodriguez@duocuc.cl</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start" style="background-color: black;">
+        <div class="container p-4">
+            <div class="row footer">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 style="color: hsl(0, 1%, 50%);">SIENTO1SERIES</h5> 
+                    <br>
+                    <p style="color: hsl(0, 1%, 50%);" id="footer"></p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 style="color: hsl(0, 1%, 50%);text-align: right;" >Visita</h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" style="color: #5a5a5a;">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #5a5a5a;">Contactanos</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #5a5a5a;">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'series' 'ins' -1 %}" style="color: #5a5a5a;">Acceso Privado</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="socials">
+            <li><a href="#" class="icon-facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="icon-twitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="icon-google-plus" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            ©️ 2021 Copyright
+        </div>
+            
+       </footer>
+       <script>
+           var txt = '{"nombre": "Siento1Series", "nombre2": "series", "nombre3": "plataformas", "video": "streaming"}'
+           var obj = JSON.parse(txt);
+           document.getElementById("footer").innerHTML ="En, " + obj.nombre +" somos tan aficionados a las " + obj.nombre2 + " como tú, por eso estamos tan comprometidos con ustedes a mantener este sitio web lo más actualizado posible con las últimas series de las principales " + obj.nombre3 + " de " + obj.video ;
+       </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
